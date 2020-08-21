@@ -1,0 +1,26 @@
+/* pages/detail/detail.wxss */
+.container{
+  width: 750rpx;
+  padding: 24rpx;
+}
+.detail-wrapper{
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-wrapper{
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px rgb(240, 238, 238) solid;
+}
+.item-name{
+  font-size: 12px;
+  font-weight: bold;
+}
+.item-value{
+  font-size: 10px;
+  color: gray;
+}

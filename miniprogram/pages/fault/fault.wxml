@@ -1,0 +1,34 @@
+<!--pages/fault/fault.wxml-->
+<view class="container">
+  <view class="input-wrapper">
+    <picker mode="date" bindchange="bindStartDateChange">
+      <input class="date-input" value="{{startDate}}" placeholder="开始时间" disabled="true"></input>
+    </picker>
+    <text class="center-text">至</text>
+    <picker mode="date" bindchange="bindEndDateChange">
+      <input class="date-input" value="{{endDate}}" placeholder="结束时间" disabled="true"></input>
+    </picker>
+    <button style="font-size:12px" size="mini" type="primary" bindtap="getErrorData">搜索</button>
+  </view>
+  <scroll-view class="error-wrapper" enable-flex="true" scroll-y="true" >
+    <view class="item-wrapper" wx:for="{{errorList}}" wx:key="key">
+      <view class="img-wrapper">
+        <image class="error-img" src="../../imgs/error.png"></image>
+        <text class="error-text">故障报警</text>
+      </view>
+      <view class="text-wrapper">
+        <view class="up-info">
+          <text class="error-car-number">车牌:{{item.carNumber}}</text>
+          <text class="error-time">{{item.faultTime}}</text>
+        </view>
+        <text class="error-level">等级:{{item.faultRank}}</text>
+        <text class="error-address">地址:{{item.address}}</text>
+        <text class="error-custom">用户:{{item.custom}}</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="page-wrapper" wx:if="{{pageCount==0?false:true}}">
+    <image class="page-img" src="../../imgs/back.png" wx:if="{{currentPage==1?false:true}}" bindtap="backPage"></image>
+    <image class="page-img" src="../../imgs/next.png" wx:if="{{currentPage==pageCount?false:true}}" bindtap="nextPage"></image>
+  </view>
+</view>

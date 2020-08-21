@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container" style="height:{{windowHeight}}px;">
+  <view class="map-wrapper">
+    <map style="width:100%;height:100%" scale="15" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}"></map>
+  </view>
+  <scroll-view enable-flex="true" scroll-y="true">
+    <view class="info-wrapper" wx:for="{{infoList}}" wx:key="key">
+      <text class="info-text">{{item.leftText.name}}{{item.leftText.value}}</text>
+      <text class="info-text">{{item.rightText.name}}{{item.rightText.value}}</text>
+    </view>
+  </scroll-view>
+</view>

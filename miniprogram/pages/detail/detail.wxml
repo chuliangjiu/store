@@ -1,0 +1,9 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <scroll-view class="detail-wrapper" enable-flex="true" scroll-y="true">
+    <view class="item-wrapper" wx:for="{{detailList}}" wx:key="key">
+      <text class="item-name">{{item.name}}</text>
+      <text class="item-value"> {{item.value}}</text>
+    </view>
+  </scroll-view>
+</view>

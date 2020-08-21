@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/fault/fault",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "随车助手",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "position":"bottom",
+    "color": "#1296db",
+    "selectedColor": "#13227a",
+    "list":[
+      {"pagePath":"pages/index/index","text":"实时工况","iconPath":"./imgs/status_un.png","selectedIconPath":"./imgs/status_on.png"},
+      {"pagePath":"pages/detail/detail","text":"车辆详情","iconPath":"./imgs/detail_un.png","selectedIconPath":"./imgs/detail_on.png"},
+      {"pagePath":"pages/fault/fault","text":"故障记录","iconPath":"./imgs/fault_un.png","selectedIconPath":"./imgs/fault_on.png"}
+    ]
+  },
+  "permission":{
+    "scope.userLocation":{"desc":"您的位置信息将用于小程序位置接口的效果提示"}
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
