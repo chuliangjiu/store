@@ -1,0 +1,19 @@
+<!--components/top_input/top_input.wxml-->
+<view class="wrapper">
+  <view class="start" bindtap="chooseStart">
+    <view class="left-wrapper">
+      <text class="start-text">起点</text>
+      <image class="start-image" src="../../resource/imgs/pull_down.png"></image>
+    </view>
+    <text class="start-input">{{startAddress}}</text>
+  </view>
+  <view class="end" bindtap="chooseEnd">
+    <view class="left-wrapper">
+      <text class="end-text">终点</text>
+      <image class="start-image" src="../../resource/imgs/pull_down.png"></image>
+    </view>
+    <text class="end-input">{{endAddress}}</text>
+  </view>
+  <button class="submit-btn" size="default" type="primary" bindtap="submitOrder" >确认呼叫</button>
+  
+</view>

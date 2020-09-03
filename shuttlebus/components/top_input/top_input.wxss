@@ -1,0 +1,45 @@
+/* components/top_input/top_input.wxss */
+.wrapper{
+  background-color: #70bccc;
+  width: 100%;
+  height: 100%;
+  border-radius: 26rpx;
+  box-sizing: border-box;
+  padding: 26rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.start,.end{
+  width: 100%;
+  padding: 6rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+}
+.left-wrapper{
+  border-right:1px gray solid;
+  width: 110rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.start-text,.end-text{
+  height: auto;
+  font-weight: bold;
+}
+.start-image{
+  width: 24rpx;
+  height: 24rpx;
+}
+.start-input,.end-input{
+  
+}
+.submit-btn{
+  /* width: 50rpx;
+  height: 30rpx; */
+}

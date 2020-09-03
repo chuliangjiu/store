@@ -1,0 +1,33 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class="mcontainer">
+    <view class="item">
+       <image src="../../resource/imgs/logo.png" class="image"/>   
+    </view>
+
+    <view class="item">
+    
+      <view class="login-item">
+          <view class="login-item-info">手机号</view>
+          <view><input bindinput="phone_numberInput" /></view>
+      </view>
+
+      <view class="login-item">
+          <view class="login-item-info">密码</view>
+          <view class="login-pwd">
+          <input style="flex-grow:1" password="true" bindinput="pwdInput" />
+        
+          </view>
+      </view>
+      <view class="login-item-bottom">
+        <button class="login-btn" bindtap="loginBtnClick">登录</button>
+      </view>
+    </view>
+  
+  <view class="item bottom-info">
+    <button bindtap="register">没有账户？注册</button>
+    <view class="wechat-icon">
+    <image src=""></image>
+    </view>
+  
+  </view>
+</view>

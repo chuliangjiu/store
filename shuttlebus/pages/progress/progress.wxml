@@ -1,0 +1,15 @@
+<view class="wrapper" style="height:{{windowHeight}}px">
+  <map
+    id="weichaiMap" 
+    scale="16"
+    style="width:100%;height:100%" 
+    latitude="{{mapData.latitude}}" 
+    longitude="{{mapData.longitude}}"
+    markers="{{markers}}"
+    polyline="{{polyline}}"
+    show-location="true"
+  ></map>
+  <cover-image class="map-is_in_car-img" src="../../resource/imgs/is_in_car.png" bindtap="isInCar"></cover-image>
+  <cover-image class="map-complete-img" src="../../resource/imgs/complete.png" bindtap="isComplete"></cover-image>
+  <cover-image class="map-search-img" src="../../resource/imgs/search.png" bindtap="searchCarLocation"></cover-image>
+</view>

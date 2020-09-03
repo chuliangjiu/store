@@ -1,0 +1,28 @@
+/* pages/progress/progress.wxss */
+.wrapper{
+  width: 750rpx;
+}
+.map-is_in_car-img{
+  width: 80rpx;
+  height: 80rpx;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: calc(20% - 60rpx);
+  right: calc(75% - 60rpx);
+}
+.map-complete-img{
+  width: 80rpx;
+  height: 80rpx;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: calc(20% - 60rpx);
+  right: calc(50% - 60rpx);
+}
+.map-search-img{
+  width: 80rpx;
+  height: 80rpx;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: calc(20% - 60rpx);
+  right: calc(25% - 60rpx);
+}

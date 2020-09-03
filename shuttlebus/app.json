@@ -1,0 +1,28 @@
+{
+  "plugins": {
+    "chooseLocation": {
+      "version": "1.0.2",
+      "provider": "wx76a9a06e5b4e693e"
+    }
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/location/location",
+    "pages/progress/progress"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#002e69",
+    "navigationBarTitleText": "潍柴园区自动接驳",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于调配附近服务车辆"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

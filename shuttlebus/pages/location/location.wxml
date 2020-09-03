@@ -1,0 +1,9 @@
+<!--pages/location/location.wxml-->
+<view>
+  <view wx:for="{{locationList}}" wx:key="key">
+    <view class="item-wrapper" bindtap="chooseLocation" data-id="{{item.id}}">
+      <image class="item-image" src="../../resource/imgs/point.png"></image>
+      <text class="item-text">{{item.address}}</text>
+    </view>
+  </view>
+</view>

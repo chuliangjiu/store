@@ -1,0 +1,25 @@
+<!--miniprogram/pages/register/register.wxml-->
+
+<view class="content">
+  <view class="account">
+    <view class="title">手机号</view>
+    <view class="num"><input bindinput="phone_numberInput" placeholder="请输入手机号" placeholder-style="color:#999999;"/></view>
+  </view>
+  
+  <view class="hr"></view>
+   <view class="account">
+    <view class="title">密码</view>
+    <view class="num"><input bindblur="pwdBlur" placeholder="请输入密码" password placeholder-style="color:#999999;"/></view> 
+  </view>
+  <view class="hr"></view>
+  <view class="account">
+    <view class="title">确认密码</view>
+    <view class="num"><input bindblur="pwdBlurAgain" placeholder="再次确认密码" password placeholder-style="color:#999999;"/></view> 
+  </view>
+  <view class="hr"></view>
+  <button class="btn" type="primary" bindtap="register">注册</button>
+  <view class="tip-wrapper">
+    <text class="tip-text">密码至少包含八位数字和字母的组合</text>
+  </view>
+</view>
+
